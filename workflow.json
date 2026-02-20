@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "id": "input_node",
+      "type": "Input",
+      "label": "User Input",
+      "nodeCategory": "input"
+    },
+    {
+      "id": "assembly_tutor_agent",
+      "type": "Agent",
+      "label": "Assembly Tutor Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "challenge_evaluator_agent",
+      "type": "Agent",
+      "label": "Challenge Evaluator Agent",
+      "nodeCategory": "agent"
+    },
+    {
+      "id": "output_node",
+      "type": "Output",
+      "label": "Output",
+      "nodeCategory": "end"
+    }
+  ],
+  "edges": [
+    {
+      "source": "input_node",
+      "target": "assembly_tutor_agent"
+    },
+    {
+      "source": "assembly_tutor_agent",
+      "target": "challenge_evaluator_agent"
+    },
+    {
+      "source": "challenge_evaluator_agent",
+      "target": "output_node"
+    }
+  ]
+}

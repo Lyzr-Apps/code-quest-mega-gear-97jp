@@ -1,0 +1,26 @@
+{
+  "agent_name": "Assembly Tutor Agent",
+  "agent_id": "6997f9b4203926f2a9800b9e",
+  "description": "Conversational AI tutor that explains x86 Assembly concepts (registers, memory, stack, addressing modes, control flow, interrupts, system calls, linking) in simple, visual, beginner-friendly language. Provides analogies, step-by-step walkthroughs, code examples, and contextual help based on the user's current module.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "explanation": "string",
+    "code_example": "string",
+    "analogy": "string",
+    "follow_up_questions": [
+      "string"
+    ],
+    "current_topic": "string"
+  },
+  "example_response": {
+    "explanation": "Main explanation of the Assembly concept",
+    "code_example": "Assembly code example if relevant, empty string if not",
+    "analogy": "A simple analogy to help understand the concept, empty string if not applicable",
+    "follow_up_questions": [
+      "sample string"
+    ],
+    "current_topic": "The topic being discussed"
+  }
+}

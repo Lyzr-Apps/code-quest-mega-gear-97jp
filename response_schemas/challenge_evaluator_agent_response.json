@@ -1,0 +1,38 @@
+{
+  "agent_name": "Challenge Evaluator Agent",
+  "agent_id": "6997f9b42ec22406b8d061f1",
+  "description": "Evaluates user-submitted x86 Assembly code or answers for correctness against the challenge prompt. Explains what the user's code does vs. what was expected, identifies specific errors, provides progressive hints, and returns pass/fail with XP recommendation. Handles challenges from basic register operations to full program assembly.",
+  "agent_type": "json",
+  "accessor": "result",
+  "auto_generated": true,
+  "response_schema": {
+    "is_correct": "boolean",
+    "score": "number",
+    "xp_awarded": "number",
+    "feedback": "string",
+    "what_code_does": "string",
+    "what_was_expected": "string",
+    "errors": [
+      "string"
+    ],
+    "hints": [
+      "string"
+    ],
+    "pass_fail": "string"
+  },
+  "example_response": {
+    "is_correct": false,
+    "score": 0,
+    "xp_awarded": 0,
+    "feedback": "Detailed feedback on the submission",
+    "what_code_does": "Explanation of what the user's code actually does",
+    "what_was_expected": "Explanation of what was expected",
+    "errors": [
+      "sample string"
+    ],
+    "hints": [
+      "sample string"
+    ],
+    "pass_fail": "PASS or FAIL status"
+  }
+}
